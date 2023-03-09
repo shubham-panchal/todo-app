@@ -1,0 +1,43 @@
+@import "reset.css";
+
+.header {
+  padding: 1.8em 1.4em 1.7em 1.4em;
+}
+
+.header-title {
+  color: var(--clr-vl-gray);
+  font-family: var(--ff-primary);
+  letter-spacing: 0.6rem;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-r);
+  padding-top: 0.6em;
+}
+
+.toggle-theme-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.toggle-theme-icon {
+  width: 22px;
+}
+
+@media (min-width: 376px) {
+  .header {
+    width: 40%;
+    padding: 3.5em 1em 1.5em 1em;
+  }
+
+  .header-title {
+    font-size: 2.6rem;
+    letter-spacing: 1rem;
+  }
+
+  .toggle-theme-icon {
+    width: 30px;
+  }
+}

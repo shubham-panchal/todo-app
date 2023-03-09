@@ -1,0 +1,118 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+9. Create a root stacking context
+*/
+
+:root {
+  --clr-bright-blue: hsl(220, 98%, 61%);
+  --gradient: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+  /* Light Theme */
+  --clr-vl-gray: hsl(0, 0%, 98%);
+  --clr-vl-grayish-blue: hsl(236, 33%, 92%);
+  --clr-l-grayish-blue: hsl(233, 11%, 84%);
+  --clr-d-grayish-blue: hsl(236, 9%, 61%);
+  --clr-vd-grayish-blue: hsl(235, 19%, 35%);
+
+  /* Dark Theme */
+  --clr-vd-blue: hsl(235, 21%, 11%);
+  --clr-vd-desaturated-vlue: hsl(235, 24%, 19%);
+  /* --clr-l-grayish-blue: hsl(234, 39%, 85%); */
+  --clr-l-grayish-blue-hover: hsl(236, 33%, 92%);
+  /* --clr-d-grayish-blue: hsl(234, 11%, 52%); */
+  --clr-vd-grayish-blue-1: hsl(233, 14%, 35%);
+  --clr-vd-grayish-blue-2: hsl(237, 14%, 26%);
+
+  --fs-r: 1.125rem;
+  --fw-r: 400;
+  --fw-b: 700;
+
+  --ff-primary: "Josefin Sans", sans-serif;
+}
+
+.light-theme {
+  --bg-mobile: url("../images/bg-mobile-light.jpg");
+  --bg-desktop: url("../images/bg-desktop-light.jpg");
+  --clr-background-1: hsl(0, 0%, 98%); /*--clr-vl-gray*/
+  --clr-background-2: hsl(236, 33%, 92%); /*--clr-vl-grayish-blue*/
+  --border-clr: hsl(233, 11%, 84%); /* --clr-l-grayish-blue*/
+  --clr-primary: hsl(233, 11%, 84%); /* --clr-l-grayish-blue*/
+  --clr-secondary: hsl(236, 9%, 61%); /*--clr-d-grayish-blue*/
+  --text-decoration: hsl(236, 9%, 61%); /*--clr-d-grayish-blue*/
+  --clr-tertiary: hsl(235, 19%, 35%); /* --clr-vd-grayish-blue:*/
+  --clr-hover: hsl(235, 19%, 35%);
+}
+
+.dark-theme {
+  --bg-mobile: url("../images/bg-mobile-dark.jpg");
+  --bg-desktop: url("../images/bg-desktop-dark.jpg");
+  --clr-background-1: hsl(235, 24%, 19%); /**/
+  --clr-background-2: hsl(235, 21%, 11%); /**/
+  --border-clr: hsl(233, 14%, 35%); /* */
+  --clr-primary: hsl(234, 39%, 85%); /* */
+  --clr-secondary: hsl(234, 11%, 52%); /**/
+  --text-decoration: hsl(234, 11%, 52%); /**/
+  --clr-tertiary: hsl(234, 39%, 85%); /* */
+  --clr-hover: hsl(234, 39%, 85%);
+}
